@@ -11,7 +11,7 @@ public class experimentalPlane extends Plane{
     public experimentalPlane(String model, int maxSpeed, int maxFlightDistance, int maxLoadCapacity, ExperimentalTypes type, ClassificationLevel classificationLevel) {
         super(model, maxSpeed, maxFlightDistance, maxLoadCapacity);
         this.type = type;
-        this.classificationLevel = classificationLevel;
+        setClassificationLevel(classificationLevel);
     }
 
     public ClassificationLevel getClassificationLevel(){
